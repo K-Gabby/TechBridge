@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="googleform.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Feedback Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="section">
+          <div class="header">
+            <h2>Welcome to Our Feedback Form</h2>
+          </div>
+          <p>Please take a few minutes to share your thoughts</p>
+        </div>
+
+        <div class="section">
+          <h3>Contact Information</h3>
+          <div class="question">
+            <label class="label" for="name">Name</label>
+            <input class="input" type="text" id="name" required />
+          </div>
+          <br />
+          <div class="question">
+            <label class="label" for="email">Email</label>
+            <input class="input" type="email" id="email" required />
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Feedback</h3>
+          <div class="question">
+            <label class="label" for="rating"
+              >How would you rate your experience?</label
+            >
+            <select class="input" id="rating" required>
+              <option value="">Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <br />
+          <div class="question">
+            <label class="label" for="likes"> What did you like most?</label>
+            <textarea class="input" id="likes" required></textarea>
+          </div>
+          <br />
+          <div class="question">
+            <label class="label" for="suggestions"
+              >Suggestions for improvement?</label
+            >
+            <textarea class="input" id="suggestions" required></textarea>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Additional Information</h3>
+          <div class="question">
+            <label class="label" for="updates"
+              >would you like to receive updates?</label
+            >
+            <select class="input" id="updates" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <br />
+          <div class="question">
+            <label class="label" for="comments"> Any other comments?</label>
+            <textarea class="input" id="comments"></textarea>
+          </div>
+        </div>
+        <br />
+
+        <button class="submit" type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </body>
+</html>
