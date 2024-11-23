@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="red" style="color: red;" id="help">
+      <h1 id="header">Document Object Model</h1>
+      <p></p>
+    </div>
+    <div>
+        
+    </div>
+    <script>
+      divs = document.querySelectorAll("div");
+      let newElement = document.createElement("p");
+      newElement.textContent = "Hello Valentine";
+      newElement.style.color="green"
+      console.log(divs);
+      divs.forEach((element) => {
+        element.appendChild(newElement);
+      });
+      
+      divs.forEach(element=>{
+        if (element.className=="red"){
+        let newElement=document.createElement("p")
+        newElement.textContent="hello Valentine";
+        newElement.style.color="yellow"
+        element.appendChild(newElement);
+      }
+      else{
+        let newElement=document.createElement("h4")
+        newElement.textContent="this is Valentines day";
+        newElement.style.color="red"
+        element.appendChild(newElement);
+      }
+      })
+      
+      
+
+      // firstDiv.forEach(div)=>
+      // {div.appendChildren(newElement)}
+    </script>
+  </body>
+</html>

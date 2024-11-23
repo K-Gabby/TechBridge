@@ -6,10 +6,23 @@
   height: 100vh;
   background-color: #f2f2f2;
 }
-h1{
-    text-align: center;
-    font-size: 32px;
-    color: blue;
+
+@media (max-width: 1248px) {
+  .body {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .body {
+    width: 100%;
+    padding: 16px;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: blue;
 }
 
 .body > div {
@@ -109,31 +122,31 @@ input[type="radio"] {
   top: 2px;
 }
 
-.lastContainers>input{
-    width: 100%;
-    margin-bottom: 10px;
-    height: 30px;
+.lastContainers > input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 30px;
 }
-.lastContainers~p{
-    font-size: 10px;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.5);
+.lastContainers ~ p {
+  font-size: 10px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
 }
-a:visited{
-    color: #1877f2;
+a:visited {
+  color: #1877f2;
 }
-button{
-    display: block;
-    margin: 12px auto;
-    background-color: #00a400;
-    border: none;
-    padding:12px 24px;
-    border-radius: 6px;
-    color: #fff;
-    height: 36px;
-    box-sizing: border-box;
+button {
+  display: block;
+  margin: 12px auto;
+  background-color: #00a400;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: #fff;
+  height: 36px;
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: #1877f2;
+a {
+  text-decoration: none;
+  color: #1877f2;
 }
