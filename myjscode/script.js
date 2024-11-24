@@ -72,6 +72,7 @@ alphabet = [
   "z",
 ];
 
+// Encoded Word
 const reverse = (alpha) => {
   rIndex = 25 - alphabet.indexOf(alpha);
   return alphabet[rIndex];
